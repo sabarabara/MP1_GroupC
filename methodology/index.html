@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Noto+Serif:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="space"></div>
+    <header class="header">
+        <h1>Motion Capture</h1>
+    </header>
+
+    <main class="container">
+        <section class="content" data-aos="fade-up" data-aos-duration="700">
+            <h2 class="section-title">モーションキャプチャーの方法論</h2>
+            <article class="method">
+                <h3>3-1. 光学式</h3>
+                <p><strong>【概要】</strong> 光学式モーションキャプチャーシステムは、複数台のカメラを使ってマーカーの位置をトラッキングするシステムです。</p>
+                <p><strong>【方法】</strong> 専用カメラと反射マーカーを使用して座標を計測します。三角測量の原理で三次元座標を算出します。</p>
+            </article>
+
+            <article class="method">
+                <h3>3-2. 慣性式</h3>
+                <p><strong>【概要】</strong> 慣性センサを用いて動きを計測し、骨格モデルに当てはめる方法です。</p>
+                <p><strong>【方法】</strong> 慣性センサ（加速度計、角速度計、地磁気計）を装着し、各種データから身体の動きを計測します。</p>
+            </article>
+
+            <article class="method">
+                <h3>3-3. 画像式（ビデオ式）</h3>
+                <p><strong>【概要】</strong> ビデオカメラを使用し、マーカー付きまたはマーカーレスで人の動きをトラッキングする方法です。</p>
+                <p><strong>【方法】</strong> カメラで撮影し、シルエット抽出や三次元座標算出を行います。</p>
+            </article>
+
+            <article class="method">
+                <h3>3-4. 磁気式</h3>
+                <p><strong>【概要】</strong> 磁界発生装置と磁気センサーを使用し、動きを計測します。</p>
+                <p><strong>【特徴】</strong> 金属環境下では精度が低下する可能性があります。</p>
+            </article>
+
+            <article class="method">
+                <h3>3-5. 機械式</h3>
+                <p><strong>【概要】</strong> ポテンションメーターやエンコーダを用いて身体の動きを計測します。</p>
+                <p><strong>【特徴】</strong> 装着の影響で動作に制限が生じる可能性があります。</p>
+            </article>
+        </section>
+    </main>
+
+    <div class="space-2"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+
+</html>
