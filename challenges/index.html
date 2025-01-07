@@ -7,44 +7,98 @@
     <meta name="description" content="Motion captureの歴史と技術">
     <meta name="author" content="Your Name">
     <title>Motion Capture</title>
-    
+
     <!-- 外部スタイル -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Emilys+Candy&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Emilys+Candy&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-    <div class="space"></div>
 
-    <header class="header">
-        <h1>Motion Capture</h1>
-    </header>
+<div class="header">
+    <h1><a href="../index.html" class="home">MotionCapture</a></h1>
+</div>
 
-    <main>
-        <section class="container" data-aos="fade-up" data-aos-duration="700">
-            <h1>モーションキャプチャーの課題
-            </h1>
-            <div class="text">
-                <p>
-                    モーションキャプチャーだけでは、モーションアクターとの体格差による違和感や、握手などの接触する表現をすることが難しいのでどうしてもアニメーターによる修正が必要になる。また、コストと時間がかかることや、動きが制限されることの課題も存在する。これらの課題を解決するために、モーションアクターの実際の動きとCGキャラクターの動きの差が少なくなるような技術の向上が必要である。
+<div class="container">
+
+    <div class="title">
+        <p class="subtitle">今後とその展望</p>
+        <p class="maintitle" data-aos="fade-up" data-aos-duration="800">CHALLENGES</p>
+        <p class="sentence">
+            モーションキャプチャには、センサー技術やアルゴリズムの精度向上、コスト削減、一般普及が課題。指先や表情などの細かい動作の正確な取得が難しく、高精度なシステムは高額で運用にも専門知識が必要。一般人の普及率は低く、価格と機能のバランスが課題となっている。「mocopi」のような手軽な商品が普及し始め、将来的には自宅からリアルタイムでアバターを介して様々な場所にアクセスできる可能性が期待されている。
+    </div>
+
+    <hr></hr>
+
+    <div class="image">
+        <img src="../public/challenges/challenge.png" class="ia">
+        <img src="../public/challenges/challenges%20(2).png" class="ic">
+        <img src="../public/challenges/challenges%20(1).png" class="ib">
+    </div>
+
+
+    <div class="mainmain">
+        <div class="main">
+            <p class="a">技術的課題</p>
+            <div class="submain">
+                <p class="sentence-1">
+                    技術の発展により精度は良くなってはいるものの、いまだセンサー技術の高度化やアルゴリズムの改良、高速な通信とデータ処理の実現が満たされていないため、現時点では、複雑な動きや細かい表情の取得が困難である。特に、指先や顔の表情など、微細な動きを正確に記録するには、より高度なセンサーやアルゴリズムが必要とされる。
+                    また、マーカーレスのモーションキャプチャーにおいては、マーカーを使用している光学式や慣性式よりも精度が落ちてしったり、リアルタイム性が低くなったりする。そのため、今後はさらに高精度でリアルタイムな動作捕捉が可能になることが期待されている。
                 </p>
             </div>
-        </section>
-    </main>
+        </div>
 
-    <div class="space-2"></div>
+        <div class="main">
+            <p class="b">運用面の課題</p>
+            <div class="submain">
+                <p class="sentence-1">
+                    高精度なシステムほど、機器の導入費用が高額になる傾向がある。モーションキャプチャーを商用目的として利用する場合、システムの運用には専門知識を持つ人材が必要であるため、教育・訓練にもコストと時間を要する。モーションキャプチャ―の運用には、スタジオの確保やマーカーの装着など、一定の手間がかかる。「FINAL
+                    FANTASY
+                    XVI」チームが行った、自宅でモーションキャプチャーを撮影する環境作り「おうちDEモーションキャプチャ」を取り組んだ。この取り組みは、リモートワークとモーションキャプチャスタジオでの収録を両立させる方法ないかを模索したものである。小型の加速度センサーなどを用い、自宅の一室でモーションキャプチャー行った。この取り組みが今後の展望に活かせるのではないかと考える。
+                </p>
+            </div>
+        </div>
 
-    <!-- スクリプト -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+        <div class="main">
+            <p class="c">一般人への普及がない課題</p>
+            <div class="submain">
+                <p class="sentence-1">
+                    モーションキャプチャは主にプロが使うものであるため、一般人の普及率が１％程度である。2020年から徐々に一般人向けのものが販売され始めた。しかし価格が高く平均で3～4万円必要になる。人間がものを買う際に重要視する点として”コストパフォーマンス”がある。これより普及率から価格と機能が見合っていないとわかる。現在価格を落とすことができないため需要を上げる必要がある。例えば家にいる時、遊園地に行けたり、サブスクリプションとして価格の負担を下げることが需要を上げる要因になると考え、この考えが今後の展望に活かせるのではないかと考える。
+
+                    sonyの商品で”mocopi”という商品がある。これは500円玉の大きさの機器を全身に6箇所つけるだけで家で気軽にできるものである。価格は約5万円で2023年1月に発売された。2年間という長い月日がたち、やっと普及し始めているものである。メリットとしてスマホさえあればどこでも自分のアバターになることができる。今は自分自身が赴いてアバターになることしかできないが将来は応用が利くのであれば、家から行きたい場所に現実でいける日が来るかもしれないと考える。
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="footer">
+    <h1>reference</h1>
+    <div class="text">
+        <a href="https://www.famitsu.com/news/202308/25314631.html">『FF16』に使われた“自宅でモーションキャプチャ”技術。そんなことできるの？
+            できる。開発チームが使用した実機材を紹介【CEDEC2023】 | ゲーム・エンタメ最新情報のファミ通.com
+        </a><br>
+        <a href="https://signyamo.blog/vr_item/#toc16">https://signyamo.blog/vr_item/#toc16</a><br>
+    </div>
+</div>
+
+<div class="space-2"></div>
+
+
+<!-- スクリプト -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

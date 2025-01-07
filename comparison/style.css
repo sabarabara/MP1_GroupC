@@ -1,56 +1,132 @@
 body {
     margin: 0;
     font-family: "Noto Serif", serif;
-    background-color: #333; /* 背景を黒に変更 */
-    color: #f9f9f9; /* 文字色を白に変更 */
 }
 
 .header {
-    padding: 2rem 0;
-    margin-left: 0; /* マージンを統一 */
-    background-color: black; /* ヘッダーの背景を黒に変更 */
-    color: white; /* ヘッダーの文字色を白に変更 */
+
+    padding-left: 3rem;
+    padding-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.93);
+    color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+
 }
 
 .header h1 {
-    padding:2rem;
     font-family: "Delicious Handrawn", serif;
-    font-size: 5rem; /* フォントサイズを統一 */
+    font-size: 3rem;
+    padding-top: 2.0rem;
+    padding-bottom: 2.0rem;
     margin: 0;
-    color: #f9f9f9; /* ヘッダーのタイトル文字を白に変更 */
 }
 
-.container {
-    padding: 2rem 3rem; /* 余白を統一 */
-    background-color: #444; /* コンテンツ部分の背景をダークグレーに変更 */
-    color: #f9f9f9; /* 文字色を白に変更 */
-    border-radius: 8px; /* 角を少し丸めて視覚的に分離 */
-    margin-bottom: 2.5rem; /* 一貫性のためにマージンを追加 */
+.container{
+    display: flex;
+    flex-direction: column;
 }
 
-.container h1 {
-    font-size: 3rem; /* セクションタイトルのサイズを調整 */
+.title{
+    width: 40%;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    margin-bottom: 5rem;
+}
+.subtitle{
+    margin: 0;
+    font-size: 2.0rem;
+}
+
+.maintitle{
+    margin: 0;
+    font-size: 6.5rem;
+    margin-bottom: 1rem;
+}
+
+.sentence{
+    margin: 0;
+}
+
+hr{
+    width: 65%;
+    margin-bottom: 3rem;
+    border: 1px solid black;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sentence-1{
+    width: 65%;
+    margin-bottom: 4rem;
+}
+table {
+    width: 75%;
+    border-collapse: collapse;
+    margin-bottom: 3rem;
+}
+th, td {
+    border: 1px solid #000;
+    padding: 10px;
     text-align: center;
-    margin-bottom: 1.5rem;
+}
+th {
+    background-color: #f0f0f0;
 }
 
-.container .text {
-    font-size: 1.8rem; /* フォントサイズを調整 */
-    line-height: 1.8; /* 行間を統一 */
-    text-align: justify; /* 両端揃えで読みやすく */
-    max-width: 800px; /* 幅を制限して中央揃え */
-    margin: 0 auto;
-    color: #e0e0e0; /* テキストを薄い白にしてコントラストを少し抑える */
+.sentence-2{
+    width: 65%;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
 }
 
-.space {
+.home{
+    text-decoration: none;
+    color: white;
+}
+
+.footer{
     width: 100%;
-    height: 3vh;
-    background-color: white; /* スペース部分を白に変更 */
+    background-color: black;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
 }
+
+.text{
+    width: 70%;
+    margin-left: 3rem;
+}
+
+
+.footer a{
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease;
+    width: 80%;
+}
+
+.footer a:hover{
+    color:gray;
+}
+
+.footer h1 {
+    margin: 2rem 2rem;
+    padding-top: 3rem;
+    font-size: 2rem;
+    color:white;
+}
+
+
 
 .space-2 {
-    width: 100%;
-    height: 1vh;
-    background-color: black; /* スペース2部分を黒に変更 */
+    height: 1rem;
 }

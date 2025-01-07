@@ -7,46 +7,126 @@
     <meta name="description" content="Motion captureの歴史と技術">
     <meta name="author" content="Your Name">
     <title>Motion Capture</title>
-    
+
     <!-- 外部スタイル -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
     <link rel="stylesheet" href="style.css">
-    
+
     <!-- フォント -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Emilys+Candy&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Emilys+Candy&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+          rel="stylesheet">
 </head>
 
 <body>
-    <div class="space"></div>
 
-    <header class="header">
-        <h1>Motion Capture</h1>
-    </header>
+<div class="header">
+    <h1><a href="../index.html" class="home">MotionCapture</a></h1>
+</div>
 
-    <main>
-        <section class="container" data-aos="fade-up" data-aos-duration="700">
-            <h1>比較（メリット・デメリット）</h1>
-            <div class="text">
-                <p>
-                    光学式のメリットは位置精度を高く把握することから、高精度にデータを取得することが可能である。また細かい動きや複雑な動作から広範囲な動作までキャプチャーの対処が幅広く対応している。デメリットとして高いコストや環境の制限がある。カメラを設置する広さが必要であったりする。また動作によってマーカーが外れたり、欠損したりもする。
-                </p>
-                <p>
-                    慣性式のメリットは光学式と違い場所に依存しないことである。このことから屋外での使用も可能であり、屋外でしかできないような大きな動作にも対応が可能。デメリットは加速度や角速度を積分して位置を算出するが、徐々に誤差が生まれドリフトが発生する。カメラを設置しない分、初期設定が必要であり、光学式と同様高いコストが必要になる。
-                </p>
-            </div>
-        </section>
-    </main>
+<div class="container">
+
+    <div class="title">
+        <p class="subtitle">比較</p>
+        <p class="maintitle" data-aos="fade-up" data-aos-duration="800">COMPARISON</p>
+        <p class="sentence">
+            この比較では、光学式、慣性式、画像式、磁気式、機械式のキャプチャ方式について、各方式のメリットとデメリットを整理しています。光学式は高精度で広範囲の動作に強い一方、設置にコストがかかります。慣性式は設置が簡単で屋外利用が可能ですが、計測の安定性に課題があります。画像式は手軽でコストも低めですが、精度や解析速度に影響があります。磁気式は金属障害物に強い反面、設置が複雑で磁場干渉のリスクがあります。機械式は精度が高いものの、動きが制限され、装置が大きく複雑です。それぞれの特徴を理解し、目的に応じた最適な方式を選ぶことが重要です。</p>
+    </div>
+
+    <hr></hr>
+
+    <div class="main">
+        <p class="sentence-1">
+            この比較表は、光学式、慣性式、ビデオ式の各キャプチャ方式について、その仕組み、性能、対象、設置条件、価格などを整理し、特徴を明確にすることで、異なる使用シナリオにおける最適な選択を支援することを目的としています。</p>
+        <table>
+            <tr>
+                <th>仕組み</th>
+                <th>光学式</th>
+                <th>慣性式</th>
+                <th>ビデオ式（画像式）</th>
+            </tr>
+            <tr>
+                <td>位置精度</td>
+                <td>◎</td>
+                <td>△※1</td>
+                <td>○</td>
+            </tr>
+            <tr>
+                <td>リアルタイム性</td>
+                <td>○</td>
+                <td>○</td>
+                <td>△</td>
+            </tr>
+            <tr>
+                <td>早い動作</td>
+                <td>◎</td>
+                <td>○</td>
+                <td>△</td>
+            </tr>
+            <tr>
+                <td>キャプチャー対象</td>
+                <td>人、物</td>
+                <td>人</td>
+                <td>人、物</td>
+            </tr>
+            <tr>
+                <td>キャプチャー人数※2</td>
+                <td>複数可能</td>
+                <td>1人</td>
+                <td>複数可能</td>
+            </tr>
+            <tr>
+                <td>キャプチャー可能範囲</td>
+                <td>〜約30m四方</td>
+                <td>制限なし</td>
+                <td>〜スタジアム程度</td>
+            </tr>
+            <tr>
+                <td>専用空間</td>
+                <td>必要</td>
+                <td>不要</td>
+                <td>不要</td>
+            </tr>
+            <tr>
+                <td>セットアップ</td>
+                <td>カメラ設置＆スーツ・マーカー装着</td>
+                <td>スーツの装着</td>
+                <td>カメラの設置</td>
+            </tr>
+            <tr>
+                <td>弱点</td>
+                <td>遮蔽物によるマーカーの欠落</td>
+                <td>磁場の影響によるデータの歪み</td>
+                <td>背景色と同化することによる誤認識</td>
+            </tr>
+            <tr>
+                <td>価格</td>
+                <td>60万円〜数千万円</td>
+                <td>30万円〜数百万円</td>
+                <td>40万円〜数百万円</td>
+            </tr>
+        </table>
+        <p class="sentence-2">
+            各方式には、精度やリアルタイム性、設置条件などにおいて異なる特徴があり、利用目的に応じた選択が求められます。特性を理解し、具体的なニーズに最も合ったキャプチャ方式を選ぶことが、効果的な導入に繋がります。</p>
+    </div>
+
+    <div class="footer">
+        <h1>reference</h1>
+        <div class="text">
+            <a href="https://mocap.jp/about-mocap/">https://mocap.jp/about-mocap/</a>
+        </div>
+    </div>
 
     <div class="space-2"></div>
 
-    <!-- スクリプト -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+</div>
+<!-- スクリプト -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>

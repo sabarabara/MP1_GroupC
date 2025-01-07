@@ -11,56 +11,145 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Noto+Serif:wght@400;700&display=swap"
-        rel="stylesheet">
+            href="https://fonts.googleapis.com/css2?family=Allura&family=Delicious+Handrawn&family=Noto+Serif:wght@400;700&display=swap"
+            rel="stylesheet">
 </head>
 
 <body>
-    <div class="space"></div>
-    <header class="header">
-        <h1>Motion Capture</h1>
-    </header>
 
-    <main class="container">
-        <section class="content" data-aos="fade-up" data-aos-duration="700">
-            <h2 class="section-title">モーションキャプチャーの方法論</h2>
-            <article class="method">
-                <h3>3-1. 光学式</h3>
-                <p><strong>【概要】</strong> 光学式モーションキャプチャーシステムは、複数台のカメラを使ってマーカーの位置をトラッキングするシステムです。</p>
-                <p><strong>【方法】</strong> 専用カメラと反射マーカーを使用して座標を計測します。三角測量の原理で三次元座標を算出します。</p>
-            </article>
+<div class="header">
+    <h1><a href="../index.html" class="home">MotionCapture</a></h1>
+</div>
 
-            <article class="method">
-                <h3>3-2. 慣性式</h3>
-                <p><strong>【概要】</strong> 慣性センサを用いて動きを計測し、骨格モデルに当てはめる方法です。</p>
-                <p><strong>【方法】</strong> 慣性センサ（加速度計、角速度計、地磁気計）を装着し、各種データから身体の動きを計測します。</p>
-            </article>
+<div class="container">
 
-            <article class="method">
-                <h3>3-3. 画像式（ビデオ式）</h3>
-                <p><strong>【概要】</strong> ビデオカメラを使用し、マーカー付きまたはマーカーレスで人の動きをトラッキングする方法です。</p>
-                <p><strong>【方法】</strong> カメラで撮影し、シルエット抽出や三次元座標算出を行います。</p>
-            </article>
+    <div class="title">
+        <p class="subtitle">方法論</p>
+        <p class="maintitle" data-aos="fade-up" data-aos-duration="800">Methodology</p>
+        <p class="sentence">
+            モーションキャプチャーは、光学式、慣性式、ビデオ式、磁気式、機械式の5方式に分類される。各方式は異なるセンサーやカメラを使用し、計測精度や環境要件が異なる。光学式は高精度だが専用空間が必要。慣性式は装着型で場所を問わないが、ドリフトが課題。ビデオ式はマーカーレスも可能。磁気式は金属影響に弱い。機械式は動作制限がある。</p>
+    </div>
 
-            <article class="method">
-                <h3>3-4. 磁気式</h3>
-                <p><strong>【概要】</strong> 磁界発生装置と磁気センサーを使用し、動きを計測します。</p>
-                <p><strong>【特徴】</strong> 金属環境下では精度が低下する可能性があります。</p>
-            </article>
+    <hr>
 
-            <article class="method">
-                <h3>3-5. 機械式</h3>
-                <p><strong>【概要】</strong> ポテンションメーターやエンコーダを用いて身体の動きを計測します。</p>
-                <p><strong>【特徴】</strong> 装着の影響で動作に制限が生じる可能性があります。</p>
-            </article>
-        </section>
-    </main>
+    <div class="mainmain">
+        <div class="main">
+            <p class="a">光学式</p>
+            <div class="submain">
 
-    <div class="space-2"></div>
+                <p class="sentence-1">
+                    <strong>【概要】</strong>
+                    光学式モーションキャプチャーシステムは、複数台のカメラを使ってマーカーの位置をトラッキングするシステムである。<br>
+                    <strong>【方法】</strong>
+                    専用のカメラと光の反射率が高い球型マーカーを使用して計測する。カメラから紫外線を照射し、反射マーカーが光を反射することで、座標を割り出す。カメラを複数台使用し、三角測量の原理で三次元の座標を算出する。位置精度が高く、マーカーを付けることで人やモノをキャプチャーできるので、現在最も幅広い分野で活用されている。<br>
+                </p>
+                <div class="image-1">
+                    <img src="../public/methodology/meth1.png" alt="miss" class="ia">
+                    <img src="../public/methodology/meho2.png" alt="miss" class="ib">
+                </div>
+            </div>
+        </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>AOS.init();</script>
+
+        <div class="main">
+            <p class="b">慣性式</p>
+            <div class="submain reverse">
+                <div class="sentence-1">
+
+                    <strong>【概要】</strong>
+                    慣性式モーションキャプチャーシステムは、慣性センサを身体に装着し、センサから得た加速度・角速度・方位の情報を骨格モデルに当てはめることで身体の動きを計測するシステムである。<br>
+
+                    <strong>【方法】</strong>
+                    身体に装着した慣性センサから得た加速度・角速度・方位の情報を骨格モデルの各セグメント（骨）とジョイント（関節）の動きに当てはめ、身体の動きを計測する。
+                    動きを検知する慣性センサの代表として、加速度計や角速度計（ジャイロセンサ）が一般的だが、モーションキャプチャーにはその2つのセンサに地磁気計も加わった9軸の慣性センサが使用される。ものによっては気圧計も含まれた10軸センサを使用するものもある。<br>
+                    加速度計：直線的な動きの方向と量を測定<br>
+                    角速度計（ジャイロ）：回転した動きの方向と量を測定<br>
+                    地磁気計：地球をとりまく地磁気を検出することで方角を測定<br>
+
+                </div>
+                <div class="image-1">
+                    <img src="../public/methodology/meth3.png" alt="miss" class="ic">
+                    <img src="../public/methodology/meth4.png" alt="miss" class="id">
+                    <img src="../public/methodology/meth5.png" alt="miss" class="ie">
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <p class="c">画像式（ビデオ式）</p>
+            <div class="submain">
+                <div class="sentence-1">
+                    <strong>【概要】</strong>
+                    ビデオ式モーションキャプチャーシステムは複数台のカメラを使って人の動きをトラッキングするシステム。マーカーレスでも計測が可能である。マーカーを付けて計測した方が高精度である。<br>
+
+                    <strong>【方法】</strong>
+                    複数台のカメラを使用して、光学式と同じくキャリブレーションを行います。
+                    （光学式では赤外線カメラを使用しますが、基本的にはビデオ式で使用するのはビデオカメラやハイスピードカメラです。）撮影された画像から対象物と背景を分離させてシルエットを抽出します。抽出されたシルエットを基に自動で骨格モデルを作成します。3Dジョイントの位置と角度を抽出して、関節角度などのデータを提供します。
+                    　光学式のベースとなる計測方式。
+                    複数台のカメラから、3次元座標を算出するために、DLT法（direct linear
+                    transformation法）により3次元空間を定義し、各部位の3次元座標を算出。<br>
+
+
+                </div>
+                <div class="image-1">
+                    <img src="../public/methodology/meth6.png" alt="miss" class="if">
+                    <img src="../public/methodology/meth7.png" alt="miss" class="ig">
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <p class="d">磁気式</p>
+            <div class="submain reverse">
+                <div class="sentence-1">
+                    「磁界発生装置」と磁気センサーを使用する計測方式。
+                    磁界発生装置とセンサーの両方にコイルが組み込まれている。
+                    磁界発生装置から2種類の磁界を発生させて計測を行う。
+                    磁界を使用するため、金属などが近くにあると計測が難しいことが難点。
+
+                </div>
+                <div class="image-1">
+                    <img src="../public/methodology/meth8.png" alt="miss" class="ih">
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <p class="e">機械式</p>
+            <div class="submain">
+                <div class="sentence-1">
+                    機械的に角度を計測するポテンションメーターや、エンコーダの回転数などを使用して、身体の姿勢を推定する方式。
+                    ワイヤレスで計測等は簡単であるが、機器を直接身体に装着し計測を行うため、動作などに制限が出る可能性が高い。
+                </div>
+                <div class="image-1">
+                    <img src="../public/methodology/meth9.png" alt="miss" class="ii">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <h1>reference</h1>
+    <div class="text">
+        <a href="https://cgworld.jp/feature/201905-gree-vrsionup3.html">https://cgworld.jp/feature/201905-gree-vrsionup3.html</a><br>
+        <a href="https://zukun-lab.com/services/mcfc/">https://zukun-lab.com/services/mcfc/</a><br>
+        <a href="https://cgworld.jp/feature/interview/mvn004.html">https://cgworld.jp/feature/interview/mvn004.html</a><br>
+        <a href="https://mocap.jp/about-mocap/">https://mocap.jp/about-mocap/</a><br>
+        <a href="https://mocap.jp/about-mocap/">https://mocap.jp/about-mocap/</a><br>
+        <a href="https://www.watabe-lab.org/old/info/2013/03/20130318140418.html">モーションキャプチャについて｜デジタルアーカイブ研究情報｜東北伝統芸能アーカイブス</a><br>
+        <a href="https://mocap.jp/about-mocap/">【モーションキャプチャとは？】原理や活用シーンを種類別に解説 |
+            モーションキャプチャーシステム販売｜株式会社スパイス</a><br>
+    </div>
+
+</div>
+
+<div class="space-2"></div>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/luminous-lightbox/2.3.2/luminous.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>AOS.init();</script>
 </body>
 
 </html>

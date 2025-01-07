@@ -11,9 +11,9 @@ body{
 
 .header h1 {
     font-family: "Delicious Handrawn", serif;
-    font-size: 6rem;
-    margin-top: 1.5rem;
-    margin-bottom: 5rem;
+    font-size: 3rem;
+    margin-top: 2.0rem;
+    margin-bottom: 2.0rem;
 }
 
 
@@ -136,43 +136,40 @@ body{
     color: black;
 }
 
-.footer {
+
+.footer{
     width: 100%;
-    height: 30vh;
     background-color: black;
+    padding-top:2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    -webkit-clip-path: polygon(0 0, 100% 2%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
+}
+
+.text{
+    width: 90%;
+    margin-left: 3rem;
+}
+
+
+.footer a{
+    text-decoration: none;
     color: white;
-    -webkit-clip-path: polygon(0 0, 100% 5%, 100% 100%, 0 100%);
-    clip-path: polygon(0 0, 100% 25%, 100% 100%, 0 100%);
+    transition: 0.2s ease;
+    width: 80%;
 }
 
-.footer {
-    font-family: "Noto Serif", serif;
+.footer a:hover{
+    color:gray;
 }
 
-.footer .reference h1 {
+.footer h1 {
     margin: 2rem 2rem;
     padding-top: 3rem;
     font-size: 2rem;
-}
-
-.footer .reference a {
-    margin: 0rem 5rem;
-    font-size: 1.2rem;
-    color: white;
-    text-decoration: none;
-    display: block;
-    width: 10%;
-}
-
-.footer .reference a:hover {
-    transition: 0.3s ease;
-    transform: scale(1.1);
-}
-
-.space{
-    width: 100%;
-    height: 3vh;
-    background-color: black;
+    color:white;
 }
 
 .space-2{
